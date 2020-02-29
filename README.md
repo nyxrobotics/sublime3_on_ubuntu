@@ -1,5 +1,5 @@
 # sublime3_on_ubuntu 
-SublimeText3の設定手順を記録します  
+SublimeText3の設定手順を記録します  s
 環境:Ubuntu16.04, kernel:4.15.0-64-generic  
   
 1. SublimeText3をインストール[1]
@@ -10,6 +10,11 @@ SublimeText3の設定手順を記録します
         sudo apt-get install sublime-text
 
 1. ポップアップを無効化[2]  
+※一回目だけ一瞬見える  
+
+    1. 必要なパッケージのインストール
+
+            sudo apt install wmctrl
 
     1. 以下のスクリプトをクリップボードにコピー  
     ※markdown[コード挿入方法](https://meta.stackexchange.com/posts/173221/edit)
@@ -55,7 +60,12 @@ SublimeText3の設定手順を記録します
 
     1. さっきのスクリプトをペースト  
 
-    1. 適当なファイル名（"popup_block.py"など）で保存（保存場所は変えない）  
+    1. 適当なファイル名（"disable_popup.py"など）で保存（保存場所は変えない） 
+
+    1. うまく行かない時  
+        - View > Show Consoleで以下コマンドを使用してエラーメッセージを見る  
+                view.run_command('disable_popup')
+
 
 1. 更新を無効化[3]  
   
@@ -77,8 +87,8 @@ SublimeText3の設定手順を記録します
         - テーマファイル名も変更  
         Flatland Dark.tmTheme -> NyxFlatland Dark.tmTheme  
         Flatland Monokai.tmTheme -> NyxFlatland Monokai.tmTheme  
-        - テーマファイルを編集し、選択部分の背景色「selection」を明るい灰色に変更  
-        文字列検索で「<key>selection</key>」を探し、その下の行の色に関する数値を変更  
+    1. テーマファイルを編集し、選択部分の背景色「selection」を明るい灰色に変更[7]  
+    文字列検索で「<key>selection</key>」を探し、その下の行の色に関する数値を変更  
         例：
 
                 <key>selection</key>
@@ -96,11 +106,11 @@ SublimeText3の設定手順を記録します
 
 
 
-1. MarkDown編集機能（OmniMarkupPreviewerなど）[16]  
+1. MarkDown編集機能（OmniMarkupPreviewerなど）[8]  
   
-1. ConvertToUTF8[17]  
+1. ConvertToUTF8[9]  
 
-1. Theme - Afterglow[18]  
+1. Theme - Afterglow[10]  
 
 
 
@@ -109,7 +119,9 @@ SublimeText3の設定手順を記録します
 [2]https://gist.github.com/egel/b7beba6f962110596660  
 [3]https://forum.sublimetext.com/t/solved-disable-update-available-pop-up/1381  
 [4]https://qiita.com/riv/items/e8de0aa218d12429206a  
-[5]http://yasuyuky.github.io/SublimeMozcInput/  
-[16]https://qiita.com/kouichi-c-nakamura/items/e2aa565ac4571d1a5ff5  
-[17]http://watarisein.hatenablog.com/entry/2014/12/15/212518  
-[18]https://gist.github.com/watari53/66e46d4a541f17a0169e  
+[5]http://yasuyuky.github.io/SublimeMozcInput/    
+[6]https://coliss.com/articles/build-websites/operation/work/sublime-text-themes-for-developer-2016.html
+[7]https://stackoverflow.com/questions/39262481/change-highlight-colour-in-sublime-text-3  
+[8]https://qiita.com/kouichi-c-nakamura/items/e2aa565ac4571d1a5ff5  
+[9]http://watarisein.hatenablog.com/entry/2014/12/15/212518  
+[10]https://gist.github.com/watari53/66e46d4a541f17a0169e  
