@@ -1,0 +1,12 @@
+{
+	"color_scheme": "Packages/Theme - NyxFlatland/Theme - NyxFlatland.sublime-package/NyxFlatland Dark.tmTheme",
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"spell_check": false,
+	"tab_size": 4,
+	"theme": "NyxFlatland Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"update_check": false
+}
