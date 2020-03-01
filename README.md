@@ -64,6 +64,7 @@ SublimeText3の設定手順を記録します  s
 
     1. うまく行かない時  
         - View > Show Consoleで以下コマンドを使用してエラーメッセージを見る  
+    
                 view.run_command('disable_popup')
 
 
@@ -91,17 +92,17 @@ SublimeText3の設定手順を記録します  s
     文字列検索で「<key>selection</key>」を探し、その下の行の色に関する数値を変更  
         例：
 
-                <key>selection</key>
-                <string>#adadad</string>
+            <key>selection</key>
+            <string>#adadad</string>
 
-                <key>selectionBorder</key>
-                <string>#adadad</string>
+            <key>selectionBorder</key>
+            <string>#adadad</string>
 
-                <key>findHighlight</key>
-                <string>#ffe792</string>
+            <key>findHighlight</key>
+            <string>#ffe792</string>
 
-                <key>inactiveSelection</key>
-                <string>#545454</string>
+            <key>inactiveSelection</key>
+            <string>#545454</string>
 
 
 
